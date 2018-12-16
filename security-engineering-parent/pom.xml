@@ -17,12 +17,15 @@
         <module>security-engineering-web</module>
         <module>security-engineering-repairmanager</module>
     </modules>
-    <dependencies>
-        <dependency>
-            <groupId>io.jboot</groupId>
-            <artifactId>jboot</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-    </dependencies>
 
+    <!-- dependencyManagement 控制版本 不实际依赖 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.jboot</groupId>
+                <artifactId>jboot</artifactId>
+                <version>1.5.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
